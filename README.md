@@ -1,14 +1,14 @@
-# ==========================================================
-#      Paquete de Archivos para Repositorio "ssh_blindado"
-# ==========================================================
-#
-# Instrucciones:
-# 1. Copia el contenido de cada sección de abajo.
-# 2. Pega el contenido en un nuevo archivo de texto en tu máquina local.
-# 3. Guarda cada archivo con el nombre indicado (ej. README.md, create_vm.sh, etc.).
-# 4. Una vez guardados todos los archivos en una carpeta, puedes crear un .zip con ellos.
-#
-# ==========================================================
+==========================================================
+     Paquete de Archivos para Repositorio "ssh_blindado"
+==========================================================
+
+Instrucciones:
+1. Copia el contenido de cada sección de abajo.
+2. Pega el contenido en un nuevo archivo de texto en tu máquina local.
+3. Guarda cada archivo con el nombre indicado (ej. README.md, create_vm.sh, etc.).
+4. Una vez guardados todos los archivos en una carpeta, puedes crear un .zip con ellos.
+
+==========================================================
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Archivo 1: README.md
