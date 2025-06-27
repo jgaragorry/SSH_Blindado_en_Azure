@@ -138,6 +138,8 @@ Antes de comenzar, asegúrate de tener lo siguiente en tu máquina local (ej. WS
     sudo systemctl restart ssh
     ```
     > **¡Es normal y esperado que tu sesión SSH se congele o se cierre en este momento!**
+    >
+    > **Nota Opcional:** Si por alguna razón tu conexión no se corta, puedes forzar que todos los servicios se recarguen con un reinicio completo de la VM. Ejecuta `sudo reboot`. Ten en cuenta que la VM tardará 1-2 minutos en volver a estar disponible.
 
 ### **Fase 4: Actualizar Reglas de Red en Azure**
 
@@ -151,6 +153,10 @@ Antes de comenzar, asegúrate de tener lo siguiente en tu máquina local (ej. WS
     ```bash
     az network nsg rule delete --resource-group rg-gmt-vm-lab --nsg-name vm-gmt-ubuntuNSG --name default-allow-ssh
     ```
+3.  **(Paso Opcional pero Recomendado) Verificación en el Portal de Azure:**
+    > Antes de intentar la nueva conexión, es una excelente práctica ir al **Portal de Azure**, navegar a tu grupo de recursos (`rg-gmt-vm-lab`), seleccionar el **Network Security Group** (`vm-gmt-ubuntuNSG`) y verificar en la sección "Reglas de seguridad de entrada" que:
+    > - La regla `default-allow-ssh` (para el puerto 22) ha sido **eliminada**.
+    > - Una nueva regla (ej. `AllowSsh_2222` o la que creaste) ha sido **creada** y permite el acceso al puerto 2222.
 
 ### **Fase 5: Verificación Final del Blindaje**
 
